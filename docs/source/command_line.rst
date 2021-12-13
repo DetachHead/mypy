@@ -516,6 +516,12 @@ of the above sections.
     unrelated type. This flag enables redefinition of a variable with an
     arbitrary type *in some contexts*: only redefinitions within the
     same block and nesting depth as the original definition are allowed.
+
+    -   only redefinitions within the same block and nesting depth as the
+        original definition are allowed.
+    -   The variable must be referenced in the expression assigned in the
+        redefinition.
+
     Example where this can be useful:
 
     .. code-block:: python
